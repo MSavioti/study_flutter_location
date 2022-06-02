@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> _calculateDistanceToCities() async {
     final distances = await locationUtils.getDistanceToCities(context);
     setState(() => distancesToCitiesInOrder = distances);
-    print(distancesToCitiesInOrder);
   }
 
   @override
